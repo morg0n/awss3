@@ -1,7 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 <title>OpenEMR Example Website</title>
 </head>
 <body>
-
   <nav class="navbar navbar-dark bg-dark">
     <span class="navbar-brand mb-0 h1">
         <img src="https://www.open-emr.org/wiki/images/6/64/Favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -12,34 +21,38 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Download</a>
-      <a class="nav-item nav-link" href="#">About</a>
-      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      <a class="nav-item nav-link active" href="#">Home
+      <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="https://www.open-emr.org/">About</a>
+      <a class="nav-item nav-link" href="https://www.open-emr.org/wiki/index.php/OpenEMR_Downloads">Download</a>
+      <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>  -->
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
   </div>
   </nav>
 <h1>
   OpenEMR Example Website
-  <span
-    id="display"
-    class="badge badge-secondary">
-  </span>
 </h1>
 
   <div class="container">
-@@ -30,18 +42,33 @@ <h1>
+      <div class="row">
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="number">Input A Number</label>
+              <input
+                id="number"
                 type="text"/>
               <button
                 class="btn btn-primary"
-                type="submit">
                 type="submit"
                 id="send">
                 Submit
               </button>
           </form>
         </div>
-        <div  id="display" class="col-sm">More Examples</div>
         <div class="col-sm">
           Patient Documents
 
